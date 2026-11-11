@@ -1,0 +1,98 @@
+{
+ "tokens_file": "tokens.json",
+ "market_file": "market.json",
+ "backup_dir": "backups",
+ "lookback_days": 7,
+ "target_drr": 15,
+ "tolerance": 0.15,
+ "raise_below": 0.75,
+ "max_step_down": 0.15,
+ "max_step_up": 0.1,
+ "max_step_up_top": 0.15,
+ "max_step_down_top": 0.07,
+ "min_spend_rub": 500,
+ "min_jam_orders_to_raise": 2,
+ "min_expected_orders": 3,
+ "cooldown_hours": 72,
+ "cooldown_hours_top": 1,
+ "min_views_after_change": 100,
+ "max_bid_cpm": 2000,
+ "max_bid_cpc": 80,
+ "target_ad_pos": 3,
+ "target_pos": 10,
+ "top_drr_cap": 40,
+ "weekly_drr_limit": 12,
+ "auto_top": {
+  "min_week_freq": 2300,
+  "min_orders": 1
+ },
+ "top_margin": 3,
+ "good_pos": 3,
+ "min_stock": 10,
+ "max_changes_per_run": 30,
+ "base_bids": {
+  "lower": true,
+  "raise": true
+ },
+ "cabinets": {
+  "Swiss Health": {
+   "jam_limit": 100
+  },
+  "BioNature": {
+   "jam_limit": 30
+  }
+ },
+ "cards": {
+  "264329580": {
+   "name": "Osempic1",
+   "daily_cap": 8000,
+   "top": [],
+   "target_pos": 10
+  },
+  "1013160950": {
+   "name": "Цезарь-1",
+   "daily_cap": 1000,
+   "top": []
+  },
+  "987110787": {
+   "name": "Липо-1",
+   "daily_cap": 1000,
+   "top": []
+  },
+  "588718356": {
+   "name": "TurboOz",
+   "top": []
+  },
+  "987139577": {
+   "name": "Оземп-1",
+   "top": [],
+   "target_pos": 10,
+   "hold_lower_until": "2026-11-14",
+   "daily_cap": 8000,
+   "conv_watch": "2026-11-10"
+  }
+ },
+ "skip_campaigns": [],
+ "apply": {
+  "cabinets": [
+   "Swiss Health",
+   "BioNature"
+  ]
+ },
+ "raise_step": 0.1,
+ "raise_step_strong": 0.2,
+ "raise_strong_below": 0.5,
+ "cooldown_raise_hours": 24,
+ "min_orders_to_raise_base": 5,
+ "auto_minus": {
+  "mode": "confirm",
+  "spend_checks": 1
+ },
+ "alert": {
+  "card_drr": 30,
+  "min_spend": 1000,
+  "budget_min": 500,
+  "orders_drop": 30,
+  "summary_hour": 9
+ }
+}

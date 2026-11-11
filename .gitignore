@@ -1,0 +1,21 @@
+# Секреты: переносить только вручную, никогда не загружать в репозиторий
+tokens.json
+ozon_keys.json
+telegram.json
+
+# Рабочие данные и резервные копии
+state.json
+blocks_state.json
+market.json
+.lock
+cache/
+out/
+backups/
+*.log
+*.jsonl
+
+# Служебные файлы
+.DS_Store
+__pycache__/
+*.pyc
+*.tmp
